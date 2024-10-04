@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block scripts %}
+    <script src="{% static 'login.js' %}" defer></script>
+{% endblock scripts %}
+
+{% block content %}
+<div class="text-center">
+<video autoplay="true" id="video-element"></video>
+</div>
+
+<div id="img-element"></div>
+
+<div class="text-center mt-3">
+    <button class="btn btn-primary" id="capture-btn">Take Photo</button>
+    <button class="btn btn-info" id="reload-btn">Reload</button>
+</div>
+<center><h3>NOTE : If the face is not recognised it returns back to the home page</h3></center>
+{% endblock content %}

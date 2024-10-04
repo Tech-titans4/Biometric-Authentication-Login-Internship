@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<nav class="nav">
+    <a href="{% url 'logout' %}" class="btn btn-danger">Logout</a>
+</nav>
+<br><br><br>
+<h1 class="wel">Welcome {{request.user.username}}</h1><br><br>
+<center><h3>
+    Greetings and welcome to Certify! We are delighted to see you as part of our community.
+    Feel free to discover, interact, and collaborate with us to create something wonderful.<br>
+</h3></center>
+<br>
+<br>
+
+
+{% endblock content %}

@@ -1,0 +1,17 @@
+.not-visible {
+    display: none;
+}
+.nav{
+    padding: 8px 20px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    position: fixed;
+    margin-left: 80%;
+}
+.wel{
+    margin-left:34%;
+    margin-top: 15%;
+}
+body{
+    background-image: url('1.jpg');
+    color:antiquewhite;
+}

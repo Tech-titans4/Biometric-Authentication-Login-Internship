@@ -1,0 +1,202 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700');
+*{
+  margin: 0;
+  padding: 0;
+}
+.menu{
+  padding: 8px 20px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  background-color: #7F9183;
+  position: fixed;
+  margin-left: 25%;
+}
+.menu ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.menu li{
+  display: inline-block;
+  margin: 0 15px;
+}
+.menu a{
+  font-size: 22px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #032B43;
+  display: block;
+  position: relative;
+  padding: 4px 0;
+}
+.menu a::before{
+  content: "";
+  width: 100%;
+  height: 4%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #032B43;
+  transition: 0.5s transform ease;
+  transform: scale3d(0,1,1);
+  transform-origin: 0 50%;
+}
+.menu a:hover::before{
+  transform: scale3d(1,1,1);
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Asap", sans-serif;
+}
+body{
+  background: #B8B8AA;
+  scroll-behavior: smooth;
+}
+section{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section:nth-child(1){
+  color: #7F9183;
+  }
+section:nth-child(2){
+  color: #DDD5D0;
+  background: #7F9183;
+} 
+section:nth-child(3){
+  color:#DDD5D0;
+}
+section:nth-child(4){
+  color: #DDD5D0;
+  background: #7F9183;
+}
+section .container{
+  margin: 100px;
+  
+}
+section h1{
+  font-size: 3rem;
+  margin: 20px;
+}
+section h2{
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+section .text-container{
+   display: flex;
+}
+section .text-container .text-box{
+  margin: 20px;
+  padding: 20px;
+  background: #586F6B;
+}
+section .text-container .text-box h3{
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 900px){
+  section h1{
+    font-size: 2rem;
+    text-align: center;
+  }
+  section .text-container{
+    flex-direction: column;
+  }
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+html, body{
+  height: 100%;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: Arial;
+  background-color: #B8B8AA;
+}
+
+.container {
+  display: flex;
+/*   border:1px solid red; */
+  height: 100%;
+  align-items: center;
+
+}
+
+svg {
+    display: block;
+    font: 10.5em 'AttendEASE';
+    width: 960px;
+    height: 300px;
+    margin: 0 auto;
+    
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+  
+}
+
+.text-copy:nth-child(1){
+  stroke: #D00000;
+  animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+  stroke: #FFBA08;
+  animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+  stroke: #032B43;
+  animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+  stroke: #032B43;
+  animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+  stroke: #136F63;
+  animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+  100% {stroke-dashoffset: -35%;}
+}
